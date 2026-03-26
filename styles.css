@@ -322,6 +322,20 @@ ul {
     flex-shrink: 0;
 }
 
+/* Badge on dark (security section) background */
+.security .hackathon-badge {
+    margin: 24px auto 0;
+    display: flex;
+    width: fit-content;
+    color: var(--cta-lime);
+    background: rgba(200, 230, 74, 0.1);
+    border-color: rgba(200, 230, 74, 0.35);
+}
+
+.security .hackathon-badge svg {
+    stroke: var(--cta-lime);
+}
+
 .hero-headline {
     font-size: clamp(36px, 5vw, 64px);
     font-weight: 500;
@@ -1213,6 +1227,17 @@ ul {
 
 .section-eyebrow--light {
     color: var(--cta-mint);
+}
+
+.mission-tagline {
+    font-family: var(--font-heading);
+    font-size: clamp(18px, 2vw, 24px);
+    font-style: italic;
+    font-weight: 400;
+    color: var(--cta-mint);
+    line-height: 1.4;
+    margin-bottom: 20px;
+    letter-spacing: -0.01em;
 }
 
 .mission-headline {
@@ -2799,6 +2824,14 @@ ul {
     color: var(--text-primary);
     line-height: 1.35;
     letter-spacing: -0.02em;
+}
+
+.footer-scarcity {
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--text-secondary);
+    line-height: 1.65;
+    max-width: 360px;
 }
 
 .footer-nav-links {
