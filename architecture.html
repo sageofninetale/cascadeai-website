@@ -58,10 +58,10 @@
     <header class="arch-hero">
         <div class="container">
             <div class="arch-hero-content">
-                <h1 class="arch-title">The intelligence behind<br>the handoff.</h1>
+                <h1 class="arch-title">The intelligence behind<br>the handover.</h1>
                 <p class="arch-subtitle">CascadeAI orchestrates six specialized AI agents native to Microsoft Azure,
-                    combining real-time speech processing, strict clinical protocol matching, and EMR data
-                    synchronization with typical response times under 45 seconds.</p>
+                    combining real-time speech processing, strict clinical protocol matching, and Care System data
+                    synchronization with typical response times under two minutes.</p>
             </div>
         </div>
     </header>
@@ -138,9 +138,9 @@
                     <div class="diagram-box db-box">
                         <div class="box-header">
                             <span>🗄️</span>
-                            PostgreSQL EMR
+                            PostgreSQL Care Records
                         </div>
-                        <p>Patient master records<br>Row-Level Security</p>
+                        <p>Resident master records<br>Row-Level Security</p>
                         <div class="tech-tag">Supabase</div>
                     </div>
                 </div>
@@ -180,7 +180,7 @@
                     <div class="stack-icon">🗄️</div>
                     <h3>Database</h3>
                     <p>Supabase (PostgreSQL)</p>
-                    <div class="stack-detail">Structured EMR data with strict Row-Level Security.</div>
+                    <div class="stack-detail">Structured Care Record data with strict Row-Level Security.</div>
                 </div>
                 <div class="stack-card">
                     <div class="stack-icon">☁️</div>
@@ -233,7 +233,7 @@
                 <div class="wf-parallel-group">
                     <div class="wf-node">
                         <div class="wf-label">VerificationAgent</div>
-                        EMR Cross-Reference
+                        Care Record Verification
                     </div>
                     <div class="wf-node">
                         <div class="wf-label">ProtocolAgent</div>
@@ -256,14 +256,14 @@
         <div class="container">
             <div class="arch-section-header">
                 <h2>Real-Time Data Pipeline</h2>
-                <p>From spoken word to structured EMR insertion in under 45 seconds.</p>
+                <p>From spoken word to structured Care System insertion in under two minutes.</p>
             </div>
 
             <!-- PostHog-Inspired Pipeline Tracker -->
             <div class="pipeline-track">
                 <div class="pine-step">
                     <div class="pine-icon">🎤</div>
-                    <div class="pine-text">Nurse Audio</div>
+                    <div class="pine-text">Care Team Audio</div>
                 </div>
                 <div class="pine-line"></div>
                 <div class="pine-step">
@@ -299,7 +299,7 @@
         <div class="container">
             <div class="arch-section-header">
                 <h2>Database Substrate</h2>
-                <p>PostgreSQL schema engineered for EMR data integrity and clinical workflow tracking.</p>
+                <p>PostgreSQL schema engineered for Care Record data integrity and clinical workflow tracking.</p>
             </div>
 
             <!-- Supabase-Inspired Schema Tables -->
@@ -309,7 +309,7 @@
                 <div class="schema-table">
                     <div class="schema-header">
                         <span class="table-icon">📇</span>
-                        <span class="table-name">public.patients</span>
+                        <span class="table-name">public.residents</span>
                     </div>
                     <div class="schema-rows">
                         <div class="schema-row">
@@ -317,7 +317,7 @@
                             <span class="col-type">uuid <span class="pk">PK</span></span>
                         </div>
                         <div class="schema-row">
-                            <span class="col-name">patient_id</span>
+                            <span class="col-name">resident_id</span>
                             <span class="col-type">text <span class="unique">UNIQUE</span></span>
                         </div>
                         <div class="schema-row">
@@ -343,7 +343,7 @@
                 <div class="schema-table">
                     <div class="schema-header">
                         <span class="table-icon">🏥</span>
-                        <span class="table-name">public.nurse_shifts</span>
+                        <span class="table-name">public.staff_shifts</span>
                     </div>
                     <div class="schema-rows">
                         <div class="schema-row">
@@ -351,7 +351,7 @@
                             <span class="col-type">uuid <span class="pk">PK</span></span>
                         </div>
                         <div class="schema-row">
-                            <span class="col-name">nurse_id</span>
+                            <span class="col-name">staff_id</span>
                             <span class="col-type">text</span>
                         </div>
                         <div class="schema-row">
@@ -359,7 +359,7 @@
                             <span class="col-type">text</span>
                         </div>
                         <div class="schema-row">
-                            <span class="col-name">patient_ids</span>
+                            <span class="col-name">resident_ids</span>
                             <span class="col-type">text[]</span>
                         </div>
                         <div class="schema-row">
@@ -373,7 +373,7 @@
                 <div class="schema-table">
                     <div class="schema-header">
                         <span class="table-icon">📋</span>
-                        <span class="table-name">public.patient_updates</span>
+                        <span class="table-name">public.resident_updates</span>
                     </div>
                     <div class="schema-rows">
                         <div class="schema-row">
@@ -385,7 +385,7 @@
                             <span class="col-type">uuid <span class="fk">FK</span></span>
                         </div>
                         <div class="schema-row">
-                            <span class="col-name">patient_id</span>
+                            <span class="col-name">resident_id</span>
                             <span class="col-type">text <span class="fk">FK</span></span>
                         </div>
                         <div class="schema-row">
@@ -401,7 +401,7 @@
                             <span class="col-type">jsonb</span>
                         </div>
                         <div class="schema-row">
-                            <span class="col-name">emr_verified</span>
+                            <span class="col-name">record_verified</span>
                             <span class="col-type">boolean</span>
                         </div>
                     </div>
@@ -441,7 +441,7 @@
                 <div class="schema-table">
                     <div class="schema-header">
                         <span class="table-icon">📨</span>
-                        <span class="table-name">public.sent_handoffs</span>
+                        <span class="table-name">public.sent_handovers</span>
                     </div>
                     <div class="schema-rows">
                         <div class="schema-row">
@@ -453,11 +453,11 @@
                             <span class="col-type">uuid <span class="fk">FK</span></span>
                         </div>
                         <div class="schema-row">
-                            <span class="col-name">from_nurse_id</span>
+                            <span class="col-name">from_staff_id</span>
                             <span class="col-type">text</span>
                         </div>
                         <div class="schema-row">
-                            <span class="col-name">to_nurse_id</span>
+                            <span class="col-name">to_staff_id</span>
                             <span class="col-type">text</span>
                         </div>
                         <div class="schema-row">
