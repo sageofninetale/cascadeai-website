@@ -2,6 +2,12 @@
    CascadeAI — Interactive Features
    =================================================================== */
 
+// Always start at the top on page load / refresh
+if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+}
+window.scrollTo(0, 0);
+
 document.addEventListener('DOMContentLoaded', () => {
 
     // ===== Scroll Reveal (Spring Physics) =====
