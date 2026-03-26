@@ -46,8 +46,8 @@
                 <a href="#agents" class="nav-link">Our Agents</a>
                 <a href="architecture.html" class="nav-link">Architecture</a>
                 <a href="#how-it-works" class="nav-link">How It Works</a>
+                <a href="mailto:cascadeai.contact@gmail.com?subject=Interested%20in%20CascadeAI%20Pilot%20Program" class="nav-cta magnetic">Apply for Pilot<span class="arrow">→</span></a>
             </div>
-            <a href="mailto:cascadeai.contact@gmail.com?subject=Interested%20in%20CascadeAI%20Pilot%20Program" class="nav-cta magnetic">Apply for Pilot<span class="arrow">→</span></a>
             <button class="hamburger" id="hamburger" aria-label="Menu">
                 <span></span><span></span><span></span>
             </button>
@@ -396,29 +396,91 @@
     <section id="security" class="security">
         <div class="container">
             <div class="section-header scroll-reveal">
-                <p class="section-eyebrow section-eyebrow--light">🔒 Security</p>
-                <h2 class="section-title section-title--white">Enterprise-Grade Security<br>& Compliance</h2>
+                <p class="section-eyebrow section-eyebrow--light">Enterprise Security</p>
+                <h2 class="section-title section-title--white">Your residents' data<br><em>stays in a vault.</em></h2>
+                <p class="security-intro">Built for data protection officers and care home directors — HIPAA-ready architecture with zero-compromise data handling.</p>
             </div>
-            <div class="security-grid scroll-reveal">
-                <div class="security-item">
-                    <div class="security-check">✓</div>
+
+            <!-- Central Shield Visual -->
+            <div class="security-vault scroll-reveal">
+                <div class="vault-shield">
+                    <div class="vault-rings">
+                        <div class="vault-ring vault-ring--1"></div>
+                        <div class="vault-ring vault-ring--2"></div>
+                        <div class="vault-ring vault-ring--3"></div>
+                    </div>
+                    <svg width="72" height="72" viewBox="0 0 24 24" fill="none" stroke="#A8D5A2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        <polyline points="9 12 11 14 15 10" stroke="#C8E64A" stroke-width="2.5"/>
+                    </svg>
+                </div>
+                <div class="vault-stats">
+                    <div class="vault-stat">
+                        <span>0</span>
+                        <label>Audio files ever stored</label>
+                    </div>
+                    <div class="vault-divider"></div>
+                    <div class="vault-stat">
+                        <span>AES-256</span>
+                        <label>Encryption standard</label>
+                    </div>
+                    <div class="vault-divider"></div>
+                    <div class="vault-stat">
+                        <span>99.9%</span>
+                        <label>Azure uptime SLA</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3 Glassmorphic Security Cards -->
+            <div class="security-cards scroll-reveal">
+                <div class="security-card">
+                    <div class="security-card-icon security-card-icon--hipaa">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            <polyline points="9 12 11 14 15 10"/>
+                        </svg>
+                    </div>
+                    <div class="security-card-badge">HIPAA Ready</div>
                     <h3>HIPAA-Ready Architecture</h3>
-                    <p>End-to-end encryption for all patient data. PHI is encrypted at rest and in transit using
-                        industry-standard protocols.</p>
+                    <p>End-to-end encryption for all patient data. PHI is encrypted at rest and in transit using AES-256 industry-standard protocols.</p>
                 </div>
-                <div class="security-item">
-                    <div class="security-check">✓</div>
+                <div class="security-card">
+                    <div class="security-card-icon security-card-icon--azure">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                        </svg>
+                    </div>
+                    <div class="security-card-badge">Azure Secured</div>
                     <h3>Azure-Secured Infrastructure</h3>
-                    <p>Deployed on Microsoft Azure with enterprise-grade security, regional data residency, and 99.9%
-                        uptime SLA.</p>
+                    <p>Deployed on Microsoft Azure with enterprise-grade security controls, regional data residency, and a 99.9% uptime SLA.</p>
                 </div>
-                <div class="security-item">
-                    <div class="security-check">✓</div>
+                <div class="security-card">
+                    <div class="security-card-icon security-card-icon--zero">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z" stroke="#A78BFA"/>
+                            <path d="M19 10v2a7 7 0 0 1-14 0v-2" stroke="#A78BFA"/>
+                            <line x1="12" y1="19" x2="12" y2="23" stroke="#A78BFA"/>
+                            <line x1="8" y1="23" x2="16" y2="23" stroke="#A78BFA"/>
+                            <line x1="3" y1="3" x2="21" y2="21" stroke="#EF4444" stroke-width="2.5"/>
+                        </svg>
+                    </div>
+                    <div class="security-card-badge">Zero Retention</div>
                     <h3>Zero Audio Storage</h3>
-                    <p>Audio is processed in real-time during the handoff and immediately discarded. We never retain
-                        voice recordings.</p>
+                    <p>Audio is processed in real-time and immediately discarded. We never store, sell, or retain voice recordings — ever.</p>
                 </div>
             </div>
+
+            <!-- Compliance Badges -->
+            <div class="security-badges scroll-reveal">
+                <div class="sec-badge">✓ HIPAA Ready</div>
+                <div class="sec-badge">✓ GDPR Compliant</div>
+                <div class="sec-badge">✓ Azure Certified</div>
+                <div class="sec-badge">✓ Zero Audio Retention</div>
+                <div class="sec-badge">✓ BAA Available</div>
+            </div>
+
             <p class="security-disclaimer scroll-reveal">CascadeAI is built with HIPAA-ready architecture. Full HIPAA
                 certification available for enterprise customers with Business Associate Agreements (BAA).</p>
         </div>
