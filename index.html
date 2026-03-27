@@ -22,6 +22,10 @@
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles.css?v=4">
+    <link rel="icon" type="image/png" sizes="256x256" href="assets/logo/favicon-256.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="assets/logo/favicon-64.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/logo/favicon-32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/logo/favicon-180.png">
     <!-- Microsoft Clarity -->
     <script type="text/javascript">
         (function(c,l,a,r,i,t,y){
@@ -38,6 +42,7 @@
     <nav id="nav">
         <div class="nav-inner">
             <a href="#" class="nav-logo">
+                <img src="assets/logo/cascade-logo-icon.png" alt="CascadeAI logo" style="height:28px;width:28px;object-fit:contain;vertical-align:middle;margin-right:6px;">
                 <span>CascadeAI</span>
             </a>
             <div class="nav-links" id="navLinks">
@@ -65,12 +70,12 @@
                     <em>write themselves</em>
                 </h1>
                 <p class="hero-sub">
-                    Your team spends 45 minutes every shift writing notes instead of caring for residents. CascadeAI turns a spoken handover into a complete, verified report in under two minutes — audio never stored, never shared.
+                    Your team spends 45 minutes every shift writing notes instead of caring for residents. CascadeAI turns a spoken handover into a complete, verified report in under two minutes. Audio never stored, never shared.
                 </p>
                 <div class="hero-ctas">
                     <a href="#" class="btn btn-primary magnetic" onclick="openPilotModal(event)">Reserve a Pilot Spot<span class="arrow">→</span></a>
                 </div>
-                <p class="hero-scarcity">Accepting applications from UK care homes — <strong>free for pilot participants</strong></p>
+                <p class="hero-scarcity">Accepting applications from UK care homes: <strong>free for pilot participants</strong></p>
                 <div class="hero-trust-strip">
                     <div class="hero-trust-item">
                         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
@@ -99,7 +104,7 @@
                             <span class="chrome-dot chrome-dot--yellow"></span>
                             <span class="chrome-dot chrome-dot--green"></span>
                         </div>
-                        <div class="app-chrome-title">CascadeAI — <span id="chrome-label">Active Shift</span></div>
+                        <div class="app-chrome-title">CascadeAI <span id="chrome-label">Active Shift</span></div>
                         <div class="app-chrome-right">
                             <span class="mic-ready-pill"><span class="mic-dot"></span>Mic Ready</span>
                         </div>
@@ -121,7 +126,7 @@
                     <!-- PANEL 1: Record -->
                     <div class="demo-panel" id="panel-record">
                         <div class="app-patient-label">ACTIVE SHIFT</div>
-                        <div class="app-patient-name">Patient <em>P087</em> — Brian Harris</div>
+                        <div class="app-patient-name">Patient <em>P087</em>: Brian Harris</div>
 
                         <div class="app-update-label">ADD PATIENT UPDATE</div>
                         <div class="app-tabs">
@@ -218,7 +223,7 @@
                         <div class="report-header">
                             <div>
                                 <div class="report-title">Clinical Handoff <em>Report</em></div>
-                                <div class="report-subtitle">Patient: P087 — Brian Harris · Shift ended 11:15 PM</div>
+                                <div class="report-subtitle">Patient: P087, Brian Harris · Shift ended 11:15 PM</div>
                             </div>
                             <button class="report-end-btn" onclick="document.querySelector('[data-panel=updates]').click()">↩ Updates</button>
                         </div>
@@ -226,9 +231,9 @@
                         <!-- Safety Alerts -->
                         <div class="report-section">
                             <div class="report-section-title">⚠️ Safety Alerts</div>
-                            <div class="report-alert report-alert--red">Warfarin + Omeprazole: PPI may potentiate anticoagulation — INR pending, risk of supratherapeutic dosing.</div>
-                            <div class="report-alert report-alert--orange">Respiratory distress: RR 26, SpO2 91% on 4L NC with accessory muscle use — consider O2 escalation.</div>
-                            <div class="report-alert report-alert--yellow">Tachycardia HR 112 + amlodipine held — monitor BP closely this shift.</div>
+                            <div class="report-alert report-alert--red">Warfarin + Omeprazole: PPI may potentiate anticoagulation, INR pending, risk of supratherapeutic dosing.</div>
+                            <div class="report-alert report-alert--orange">Respiratory distress: RR 26, SpO2 91% on 4L NC with accessory muscle use, consider O2 escalation.</div>
+                            <div class="report-alert report-alert--yellow">Tachycardia HR 112 + amlodipine held, monitor BP closely this shift.</div>
                         </div>
 
                         <!-- Timeline -->
@@ -236,9 +241,9 @@
                             <div class="report-section-title">🕐 Timeline</div>
                             <div class="report-timeline">
                                 <div class="timeline-row"><span class="tl-time">07:30 PM</span><span class="tl-dot tl-dot--blue"></span><span class="tl-text">Sputum culture collected and sent to lab.</span></div>
-                                <div class="timeline-row"><span class="tl-time">08:00 PM</span><span class="tl-dot tl-dot--grey"></span><span class="tl-text">Warfarin 5mg + Omeprazole 20mg given. Amlodipine held. INR drawn — result pending.</span></div>
+                                <div class="timeline-row"><span class="tl-time">08:00 PM</span><span class="tl-dot tl-dot--grey"></span><span class="tl-text">Warfarin 5mg + Omeprazole 20mg given. Amlodipine held. INR drawn, result pending.</span></div>
                                 <div class="timeline-row"><span class="tl-time">09:00 PM</span><span class="tl-dot tl-dot--orange"></span><span class="tl-text">Vitals: BP 98/62, HR 112, RR 26, Temp 100.4°F, SpO2 91%. SOB at rest, accessory muscles.</span></div>
-                                <div class="timeline-row"><span class="tl-time">10:30 PM</span><span class="tl-dot tl-dot--orange"></span><span class="tl-text">CXR: worsening bilateral infiltrates — pneumonia consistent. Radiology review pending.</span></div>
+                                <div class="timeline-row"><span class="tl-time">10:30 PM</span><span class="tl-dot tl-dot--orange"></span><span class="tl-text">CXR: worsening bilateral infiltrates, pneumonia consistent. Radiology review pending.</span></div>
                                 <div class="timeline-row"><span class="tl-time">11:00 PM</span><span class="tl-dot tl-dot--grey"></span><span class="tl-text">Family (daughter) updated. Full code status confirmed.</span></div>
                             </div>
                         </div>
@@ -269,16 +274,16 @@
                         <!-- Pending Actions -->
                         <div class="report-section">
                             <div class="report-section-title">📌 Pending Actions <span class="pending-count">4 Tasks</span></div>
-                            <div class="pending-row"><span class="pending-badge pending-badge--critical">CRITICAL</span><span class="pending-text">Review INR — notify prescriber for warfarin dosing decision.</span></div>
+                            <div class="pending-row"><span class="pending-badge pending-badge--critical">CRITICAL</span><span class="pending-text">Review INR, notify prescriber for warfarin dosing decision.</span></div>
                             <div class="pending-row"><span class="pending-badge pending-badge--critical">CRITICAL</span><span class="pending-text">Physician to review CXR; consider empiric antibiotics.</span></div>
-                            <div class="pending-row"><span class="pending-badge pending-badge--high">HIGH</span><span class="pending-text">Reassess antihypertensives — amlodipine held, BP 98/62.</span></div>
+                            <div class="pending-row"><span class="pending-badge pending-badge--high">HIGH</span><span class="pending-text">Reassess antihypertensives, amlodipine held, BP 98/62.</span></div>
                             <div class="pending-row"><span class="pending-badge pending-badge--routine">ROUTINE</span><span class="pending-text">Frequent vitals, O2 monitoring, document pain score.</span></div>
                         </div>
 
                         <!-- Narrative Summary -->
                         <div class="report-section">
                             <div class="report-section-title">📝 Narrative <span class="narrative-hint">Copy-paste ready</span></div>
-                            <p class="report-narrative">Brian Harris (P087) had a concerning shift: HP 98/62, HR 112, Temp 100.4°F, SpO2 91% on 4L NC. Warfarin 5mg given at 08:00; amlodipine held. CXR at 10:30 shows bilateral infiltrates — pneumonia. INR pending. Family agrees to full code. Critical: review INR, escalate O2, urgent physician review.</p>
+                            <p class="report-narrative">Brian Harris (P087) had a concerning shift: HP 98/62, HR 112, Temp 100.4°F, SpO2 91% on 4L NC. Warfarin 5mg given at 08:00; amlodipine held. CXR at 10:30 shows bilateral infiltrates, pneumonia. INR pending. Family agrees to full code. Critical: review INR, escalate O2, urgent physician review.</p>
                         </div>
                     </div>
 
@@ -370,7 +375,7 @@
             <div class="section-header scroll-reveal">
                 <p class="section-eyebrow">Why CascadeAI</p>
                 <h2 class="section-title">Give your team their<br><em>time back</em></h2>
-                <p class="section-sub">Your carers are here to care — not to write reports. CascadeAI handles the documentation so your team can focus entirely on the people in their charge.</p>
+                <p class="section-sub">Your carers are here to care, not to write reports. CascadeAI handles the documentation so your team can focus entirely on the people in their charge.</p>
             </div>
             <div class="outcomes-grid">
                 <div class="outcome-card scroll-reveal">
@@ -624,7 +629,7 @@
             <div class="section-header scroll-reveal">
                 <p class="section-eyebrow section-eyebrow--light">Enterprise Security</p>
                 <h2 class="section-title section-title--white">Your residents' data<br><em>stays in a vault.</em></h2>
-                <p class="security-intro">Built for data protection officers and care home directors — GDPR-compliant architecture with zero-compromise data handling.</p>
+                <p class="security-intro">Built for data protection officers and care home directors, GDPR-compliant architecture with zero-compromise data handling.</p>
             </div>
 
             <!-- Central Shield Visual -->
@@ -669,7 +674,7 @@
                     </div>
                     <div class="security-card-badge">GDPR Compliant</div>
                     <h3>GDPR-Compliant Architecture</h3>
-                    <p>End-to-end encryption for all patient data. Encrypted at rest and in transit using AES-256 — fully compliant with UK GDPR and CQC data requirements.</p>
+                    <p>End-to-end encryption for all patient data. Encrypted at rest and in transit using AES-256. Fully compliant with UK GDPR and CQC data requirements.</p>
                 </div>
                 <div class="security-card">
                     <div class="security-card-icon security-card-icon--azure">
@@ -694,7 +699,7 @@
                     </div>
                     <div class="security-card-badge">Zero Retention</div>
                     <h3>Zero Audio Storage</h3>
-                    <p>Audio is processed in real-time and immediately discarded. We never store, sell, or retain voice recordings — ever.</p>
+                    <p>Audio is processed in real-time and immediately discarded. We never store, sell, or retain voice recordings. Ever.</p>
                 </div>
             </div>
 
@@ -797,7 +802,7 @@
                 <div class="modal-header">
                     <p class="modal-eyebrow">Limited to 5 care homes</p>
                     <h2 id="modal-title" class="modal-title">Reserve your <em>pilot spot</em></h2>
-                    <p class="modal-sub">Free for pilot participants. No commitment, no contracts — just a better way to close out every shift.</p>
+                    <p class="modal-sub">Free for pilot participants. No commitment, no contracts, just a better way to close out every shift.</p>
                 </div>
                 <form class="modal-form" id="pilot-form" onsubmit="submitPilotForm(event)">
                     <input type="hidden" name="_subject" value="New CascadeAI Pilot Application">
