@@ -45,8 +45,7 @@
                 <a href="#outcomes" class="nav-link">Why CascadeAI</a>
                 <a href="#agents" class="nav-link">Our Agents</a>
                 <a href="#how-it-works" class="nav-link">How It Works</a>
-                <a href="architecture.html" class="nav-link">Architecture</a>
-                <a href="mailto:cascadeai.contact@gmail.com?subject=Interested%20in%20CascadeAI%20Pilot%20Program" class="nav-cta magnetic">Apply for Pilot<span class="arrow">→</span></a>
+                <a href="#" class="nav-cta magnetic" onclick="openPilotModal(event)">Reserve a Spot<span class="arrow">→</span></a>
             </div>
             <button class="hamburger" id="hamburger" aria-label="Menu">
                 <span></span><span></span><span></span>
@@ -66,15 +65,16 @@
                     <em>write themselves</em>
                 </h1>
                 <p class="hero-sub">
-                    Stop staying late to do paperwork. CascadeAI listens to your verbal handover and instantly creates a clear, safe summary for the next shift, so your team can get back to their residents.
+                    Your team spends 45 minutes every shift writing notes instead of caring for residents. CascadeAI turns a spoken handover into a complete, verified report in under two minutes — audio never stored, never shared.
                 </p>
                 <div class="hero-ctas">
-                    <a href="mailto:cascadeai.contact@gmail.com?subject=Interested%20in%20CascadeAI%20Pilot%20Program" class="btn btn-primary magnetic">Apply for Early Access<span class="arrow">→</span></a>
+                    <a href="#" class="btn btn-primary magnetic" onclick="openPilotModal(event)">Reserve a Pilot Spot<span class="arrow">→</span></a>
                 </div>
+                <p class="hero-scarcity">Accepting applications from UK care homes — <strong>free for pilot participants</strong></p>
                 <div class="hero-trust-strip">
                     <div class="hero-trust-item">
                         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                        <span>HIPAA-Ready</span>
+                        <span>GDPR Compliant</span>
                     </div>
                     <div class="hero-trust-item">
                         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
@@ -292,7 +292,7 @@
     <section class="stats-banner">
         <div class="container">
             <div class="stats-intro scroll-reveal">
-                <p class="stats-eyebrow">Proven results</p>
+                <p class="stats-eyebrow">By the numbers</p>
                 <h2 class="stats-headline">The numbers behind every<br><em>safer shift</em></h2>
             </div>
             <div class="stats-grid scroll-reveal">
@@ -314,18 +314,18 @@
                 <div class="stat-sep"></div>
                 <div class="stat-item">
                     <div class="stat-number-wrap">
-                        <span class="stat-big">5</span><span class="stat-unit">+1</span>
+                        <span class="stat-big">6</span><span class="stat-unit"></span>
                     </div>
                     <span class="stat-title">AI agents</span>
-                    <span class="stat-detail">Specialised agents plus an orchestrator, running in parallel</span>
+                    <span class="stat-detail">Specialised agents working in parallel, orchestrated so nothing gets missed</span>
                 </div>
                 <div class="stat-sep"></div>
                 <div class="stat-item">
                     <div class="stat-number-wrap">
                         <span class="stat-big">100</span><span class="stat-unit">%</span>
                     </div>
-                    <span class="stat-title">EMR verified</span>
-                    <span class="stat-detail">Every medication, allergy, and vital cross-checked automatically</span>
+                    <span class="stat-title">Records verified</span>
+                    <span class="stat-detail">Every medication, allergy, and vital cross-checked against your care records automatically</span>
                 </div>
             </div>
         </div>
@@ -370,8 +370,7 @@
             <div class="section-header scroll-reveal">
                 <p class="section-eyebrow">Why CascadeAI</p>
                 <h2 class="section-title">Give your team their<br><em>time back</em></h2>
-                <p class="section-sub">We don't replace carers and nurses. We remove the busywork so they can do what they do
-                    best: care for your residents.</p>
+                <p class="section-sub">Your carers are here to care — not to write reports. CascadeAI handles the documentation so your team can focus entirely on the people in their charge.</p>
             </div>
             <div class="outcomes-grid">
                 <div class="outcome-card scroll-reveal">
@@ -625,7 +624,7 @@
             <div class="section-header scroll-reveal">
                 <p class="section-eyebrow section-eyebrow--light">Enterprise Security</p>
                 <h2 class="section-title section-title--white">Your residents' data<br><em>stays in a vault.</em></h2>
-                <p class="security-intro">Built for data protection officers and care home directors — HIPAA-ready architecture with zero-compromise data handling.</p>
+                <p class="security-intro">Built for data protection officers and care home directors — GDPR-compliant architecture with zero-compromise data handling.</p>
             </div>
 
             <!-- Central Shield Visual -->
@@ -668,9 +667,9 @@
                             <polyline points="9 12 11 14 15 10"/>
                         </svg>
                     </div>
-                    <div class="security-card-badge">HIPAA Ready</div>
-                    <h3>HIPAA-Ready Architecture</h3>
-                    <p>End-to-end encryption for all patient data. PHI is encrypted at rest and in transit using AES-256 industry-standard protocols.</p>
+                    <div class="security-card-badge">GDPR Compliant</div>
+                    <h3>GDPR-Compliant Architecture</h3>
+                    <p>End-to-end encryption for all patient data. Encrypted at rest and in transit using AES-256 — fully compliant with UK GDPR and CQC data requirements.</p>
                 </div>
                 <div class="security-card">
                     <div class="security-card-icon security-card-icon--azure">
@@ -701,10 +700,10 @@
 
             <!-- Compliance Badges -->
             <div class="security-badges scroll-reveal">
-                <div class="sec-badge">✓ HIPAA Ready</div>
                 <div class="sec-badge">✓ GDPR Compliant</div>
-                <div class="sec-badge">✓ Azure Certified</div>
+                <div class="sec-badge">✓ CQC Ready</div>
                 <div class="sec-badge">✓ Zero Audio Retention</div>
+                <div class="sec-badge">✓ Azure Certified</div>
                 <div class="sec-badge">✓ BAA Available</div>
             </div>
 
@@ -715,8 +714,7 @@
                     Top Finalist, Microsoft AI Dev Days 2026
                 </div>
 
-            <p class="security-disclaimer scroll-reveal">CascadeAI is built with HIPAA-ready architecture. Full HIPAA
-                certification available for enterprise customers with Business Associate Agreements (BAA).</p>
+            <p class="security-disclaimer scroll-reveal">CascadeAI is built to meet UK GDPR and CQC data standards. HIPAA-ready infrastructure is also available for enterprise customers requiring US compliance. Business Associate Agreements (BAA) available on request.</p>
         </div>
     </section>
 
@@ -727,7 +725,7 @@
             <div class="footer-nav">
                 <div class="footer-nav-tagline">
                     <h3>Get your team's<br>time back</h3>
-                    <p class="footer-scarcity">We are currently selecting 5 UK care homes and clinics for our early Pilot Program. Try it with your team, help shape the product, and stop losing hours to handover paperwork.</p>
+                    <p class="footer-scarcity">We're selecting 5 UK care homes for our Pilot Program. Try CascadeAI with your team at no cost, help shape the product, and get back the hour your staff loses every single shift. No commitment, no contracts.</p>
                 </div>
                 <div class="footer-nav-links">
                     <div class="footer-nav-col">
@@ -737,7 +735,7 @@
                         <a href="#how-it-works">How It Works</a>
                     </div>
                     <div class="footer-nav-col">
-                        <a href="mailto:cascadeai.contact@gmail.com?subject=Interested%20in%20CascadeAI%20Pilot%20Program">Apply for Pilot Program</a>
+                        <a href="#" onclick="openPilotModal(event)">Reserve a Pilot Spot</a>
                         <a href="architecture.html">Architecture</a>
                     </div>
                 </div>
@@ -789,6 +787,67 @@
         </div>
     </footer>
 
+    <!-- ============ PILOT APPLICATION MODAL ============ -->
+    <div id="pilot-modal" class="modal-backdrop" aria-hidden="true">
+        <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+            <button class="modal-close" onclick="closePilotModal()" aria-label="Close">&times;</button>
+
+            <!-- FORM STATE -->
+            <div id="modal-form-state">
+                <div class="modal-header">
+                    <p class="modal-eyebrow">Limited to 5 care homes</p>
+                    <h2 id="modal-title" class="modal-title">Reserve your <em>pilot spot</em></h2>
+                    <p class="modal-sub">Free for pilot participants. No commitment, no contracts — just a better way to close out every shift.</p>
+                </div>
+                <form class="modal-form" id="pilot-form" onsubmit="submitPilotForm(event)">
+                    <input type="hidden" name="_subject" value="New CascadeAI Pilot Application">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="f-name">Full name *</label>
+                            <input type="text" id="f-name" name="name" required placeholder="Jane Smith">
+                        </div>
+                        <div class="form-group">
+                            <label for="f-role">Job title *</label>
+                            <input type="text" id="f-role" name="role" required placeholder="Care Home Manager">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="f-org">Care home / organisation *</label>
+                        <input type="text" id="f-org" name="org" required placeholder="Sunrise Care Home, London">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="f-email">Work email *</label>
+                            <input type="email" id="f-email" name="email" required placeholder="jane@sunrisecare.co.uk">
+                        </div>
+                        <div class="form-group">
+                            <label for="f-residents">Resident count</label>
+                            <select id="f-residents" name="residents">
+                                <option value="">Select range</option>
+                                <option>Under 20</option>
+                                <option>20–50</option>
+                                <option>51–100</option>
+                                <option>100+</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary modal-submit" id="modal-submit-btn">
+                        Reserve My Spot <span class="arrow">→</span>
+                    </button>
+                    <p class="modal-disclaimer">We respond within 2 business days.</p>
+                </form>
+            </div>
+
+            <!-- SUCCESS STATE (hidden until form submitted) -->
+            <div id="modal-success-state" style="display:none; text-align:center; padding: 48px 24px;">
+                <div style="font-size: 48px; margin-bottom: 16px;">✓</div>
+                <h2 class="modal-title" style="margin-bottom: 12px;">Application <em>received</em></h2>
+                <p class="modal-sub">Thanks for applying to the CascadeAI Pilot Program. We'll be in touch within 2 business days.</p>
+                <button class="btn btn-primary" onclick="closePilotModal()" style="margin-top: 32px;">Close</button>
+            </div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
     <script>
         // Interactive hero demo tab switcher
@@ -797,6 +856,69 @@
             updates: 'View All Updates',
             report:  'Clinical Handoff Report'
         };
+
+        // ===== Pilot Modal =====
+        function openPilotModal(e) {
+            if (e) e.preventDefault();
+            const modal = document.getElementById('pilot-modal');
+            modal.classList.add('modal-open');
+            modal.setAttribute('aria-hidden', 'false');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closePilotModal() {
+            const modal = document.getElementById('pilot-modal');
+            modal.classList.remove('modal-open');
+            modal.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+            // Reset to form state for next open
+            document.getElementById('modal-form-state').style.display = 'block';
+            document.getElementById('modal-success-state').style.display = 'none';
+            const btn = document.getElementById('modal-submit-btn');
+            if (btn) { btn.disabled = false; btn.innerHTML = 'Reserve My Spot <span class="arrow">→</span>'; }
+        }
+
+        // ⚠️ Replace YOUR_FORM_ID with your Formspree form ID (e.g. xabcdefg)
+        // Sign up free at formspree.io — takes 2 minutes
+        const FORMSPREE_ID = 'mgopvqkg';
+
+        function submitPilotForm(e) {
+            e.preventDefault();
+            const form = document.getElementById('pilot-form');
+            const btn = document.getElementById('modal-submit-btn');
+            btn.disabled = true;
+            btn.textContent = 'Submitting…';
+
+            fetch('https://formspree.io/f/' + FORMSPREE_ID, {
+                method: 'POST',
+                body: new FormData(form),
+                headers: { 'Accept': 'application/json' }
+            })
+            .then(function(response) {
+                if (response.ok) {
+                    document.getElementById('modal-form-state').style.display = 'none';
+                    document.getElementById('modal-success-state').style.display = 'block';
+                    form.reset();
+                } else {
+                    btn.disabled = false;
+                    btn.innerHTML = 'Reserve My Spot <span class="arrow">→</span>';
+                    alert('Something went wrong. Please email us directly at cascadeai.contact@gmail.com');
+                }
+            })
+            .catch(function() {
+                btn.disabled = false;
+                btn.innerHTML = 'Reserve My Spot <span class="arrow">→</span>';
+                alert('Something went wrong. Please email us directly at cascadeai.contact@gmail.com');
+            });
+        }
+
+        document.getElementById('pilot-modal').addEventListener('click', function(e) {
+            if (e.target === this) closePilotModal();
+        });
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') closePilotModal();
+        });
 
         function switchPanel(btn, panelId) {
             // Update tab active states
