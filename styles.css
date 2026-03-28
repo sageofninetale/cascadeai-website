@@ -3076,6 +3076,37 @@ ul {
         padding: 0 20px;
     }
 
+    /* Footer Responsive Overrides */
+    .footer-nav {
+        flex-direction: column;
+        gap: 48px;
+    }
+
+    .footer-nav-links {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .footer-massive {
+        font-size: 22vw;
+        letter-spacing: -0.05em;
+        margin-left: -5px;
+    }
+
+    .footer-bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 24px;
+    }
+
+    .footer-bottom-left,
+    .footer-bottom-center,
+    .footer-bottom-right {
+        justify-self: auto;
+    }
+
     .mission-visual {
         grid-template-columns: 1fr;
     }
