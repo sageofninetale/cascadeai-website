@@ -855,6 +855,8 @@ ul {
 .tl-dot--grey   { background: #9ca3af; }
 .tl-dot--orange { background: #f97316; }
 .tl-dot--green  { background: #22c55e; }
+.tl-dot--red    { background: #ef4444; }
+.tl-dot--yellow { background: #eab308; }
 
 .tl-text {
     font-size: 11px;
