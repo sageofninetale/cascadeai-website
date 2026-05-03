@@ -170,18 +170,22 @@ function toggleDemo() {
         pauseBtn.style.display = 'flex';
         const playPromise = video.play();
         if (playPromise !== undefined) {
-            playPromise.catch(() => {
+            playPromise.then(() => {
+                video.classList.add('playing');
+            }).catch(() => {
                 overlay.style.display = 'flex';
                 pauseBtn.style.display = 'none';
             });
         }
     } else {
         video.pause();
+        video.classList.remove('playing');
         overlay.style.display = 'flex';
         pauseBtn.style.display = 'none';
     }
 
     video.onended = () => {
+        video.classList.remove('playing');
         overlay.style.display = 'flex';
         pauseBtn.style.display = 'none';
     };
