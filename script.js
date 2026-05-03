@@ -168,7 +168,13 @@ function toggleDemo() {
     if (video.paused) {
         overlay.style.display = 'none';
         pauseBtn.style.display = 'flex';
-        video.play();
+        const playPromise = video.play();
+        if (playPromise !== undefined) {
+            playPromise.catch(() => {
+                overlay.style.display = 'flex';
+                pauseBtn.style.display = 'none';
+            });
+        }
     } else {
         video.pause();
         overlay.style.display = 'flex';
@@ -180,3 +186,11 @@ function toggleDemo() {
         pauseBtn.style.display = 'none';
     };
 }
+
+// iOS touch support
+document.addEventListener('DOMContentLoaded', () => {
+    const overlay = document.getElementById('demoOverlay');
+    const pauseBtn = document.getElementById('demoPauseBtn');
+    if (overlay) overlay.addEventListener('touchend', (e) => { e.preventDefault(); toggleDemo(); });
+    if (pauseBtn) pauseBtn.addEventListener('touchend', (e) => { e.preventDefault(); toggleDemo(); });
+});
