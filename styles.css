@@ -3508,7 +3508,7 @@ ul {
     aspect-ratio: 16/9;
     background: #f0efeb;
     object-fit: cover;
-    transform: scale(1.02);
+    transform: scale(1);
     transform-origin: center center;
 }
 
