@@ -399,24 +399,14 @@
                     <video
                         class="demo-video"
                         src="/assets/cascade-demo.mp4"
-                        poster="https://www.cascadeaicare.com/assets/cascade-demo-thumb.jpg"
+                        poster="/assets/cascade-demo-thumb.jpg"
                         muted
                         playsinline
                         webkit-playsinline
                         preload="metadata"
+                        controls
                         id="demoVideo"
                     ></video>
-                    <!-- Play overlay — shown before playing -->
-                    <div class="demo-video-overlay" id="demoOverlay" onclick="toggleDemo()">
-                        <div class="demo-pulse-ring"></div>
-                        <div class="demo-play-btn" id="demoPlayBtn">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="#1a2420"><path d="M8 5v14l11-7z"/></svg>
-                        </div>
-                    </div>
-                    <!-- Floating pause button — shown while playing -->
-                    <button class="demo-pause-float" id="demoPauseBtn" onclick="toggleDemo()" style="display:none" aria-label="Pause">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
-                    </button>
                 </div>
                 <p class="demo-caption">Carer speaks → Agents process → Critical flags detected → Full report generated</p>
             </div>
