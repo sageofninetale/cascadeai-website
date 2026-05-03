@@ -159,3 +159,24 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 });
+
+function toggleDemo() {
+    const video = document.getElementById('demoVideo');
+    const overlay = document.getElementById('demoOverlay');
+    const pauseBtn = document.getElementById('demoPauseBtn');
+
+    if (video.paused) {
+        overlay.style.display = 'none';
+        pauseBtn.style.display = 'flex';
+        video.play();
+    } else {
+        video.pause();
+        overlay.style.display = 'flex';
+        pauseBtn.style.display = 'none';
+    }
+
+    video.onended = () => {
+        overlay.style.display = 'flex';
+        pauseBtn.style.display = 'none';
+    };
+}

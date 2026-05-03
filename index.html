@@ -39,7 +39,7 @@
           "name": "CascadeAI",
           "operatingSystem": "Web Application",
           "applicationCategory": "HealthcareApplication",
-          "description": "AI-powered shift handover system that turns a spoken nurse handover into a complete, verified clinical report in under 2 minutes for UK care homes and clinics.",
+          "description": "AI-powered shift handover system that turns a spoken carer handover into a complete, verified clinical report in under 2 minutes for UK care homes and clinics.",
           "url": "https://www.cascadeaicare.com/",
           "offers": {
             "@type": "Offer",
@@ -387,6 +387,41 @@
         </div>
     </section>
 
+    <section class="demo-video-section">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <p class="section-eyebrow">See It Live</p>
+                <h2 class="section-title demo-section-title">A full shift handover.<br><em>Under 2 minutes.</em></h2>
+                <p class="demo-section-sub">A carer speaks into CascadeAI. Within seconds, a complete verified clinical report, critical flags, drug interactions, and all, is ready for the incoming team.</p>
+            </div>
+            <div class="demo-video-wrapper scroll-reveal">
+                <div class="demo-video-float">
+                    <video
+                        class="demo-video"
+                        src="assets/cascade-demo.mp4"
+                        poster="assets/cascade-demo-thumb.jpg"
+                        muted
+                        playsinline
+                        preload="none"
+                        id="demoVideo"
+                    ></video>
+                    <!-- Play overlay — shown before playing -->
+                    <div class="demo-video-overlay" id="demoOverlay" onclick="toggleDemo()">
+                        <div class="demo-pulse-ring"></div>
+                        <div class="demo-play-btn" id="demoPlayBtn">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="#1a2420"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                    </div>
+                    <!-- Floating pause button — shown while playing -->
+                    <button class="demo-pause-float" id="demoPauseBtn" onclick="toggleDemo()" style="display:none" aria-label="Pause">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                    </button>
+                </div>
+                <p class="demo-caption">Carer speaks → Agents process → Critical flags detected → Full report generated</p>
+            </div>
+        </div>
+    </section>
+
     <!-- ============ MISSION — Bold Blue Section (Kabilah-style) ============ -->
     <section id="mission" class="mission">
         <div class="container">
@@ -509,7 +544,7 @@
                                 <path d="M19 10v2a7 7 0 0 1-14 0v-2" />
                             </svg>
                         </div>
-                        <span class="wf-node-name">Nurse Audio Input</span>
+                        <span class="wf-node-name">Carer Audio Input</span>
                         <span class="wf-node-sub">verbal handoff</span>
                     </div>
 

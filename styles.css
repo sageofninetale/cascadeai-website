@@ -3462,3 +3462,142 @@ ul {
         grid-template-columns: 1fr;
     }
 }
+/* ── Demo Video Section ────────────────────────────────── */
+.demo-video-section {
+    padding: 100px 0 120px;
+    background: #f4f2ed;
+}
+
+.demo-video-section .section-eyebrow {
+    color: #6b8f5e;
+}
+
+.demo-section-title {
+    color: #1a2420 !important;
+}
+
+.demo-section-title em {
+    color: #6b8f5e !important;
+}
+
+.demo-section-sub {
+    max-width: 580px;
+    margin: 0 auto;
+    color: #6b7280;
+    font-size: 17px;
+    line-height: 1.7;
+    text-align: center;
+    margin-top: 16px;
+}
+
+.demo-video-wrapper {
+    max-width: 960px;
+    margin: 56px auto 0;
+}
+
+.demo-video-float {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 24px 80px rgba(0,0,0,0.12);
+}
+
+.demo-video {
+    width: 100%;
+    display: block;
+    aspect-ratio: 16/9;
+    background: #f0efeb;
+    object-fit: cover;
+    transform: scale(1.06);
+    transform-origin: center center;
+}
+
+.demo-video-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background: rgba(0,0,0,0.3);
+    transition: background 0.3s;
+}
+
+.demo-video-overlay:hover { background: rgba(0,0,0,0.18); }
+
+/* Pulsing ring animation */
+.demo-pulse-ring {
+    position: absolute;
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    border: 2px solid rgba(200,230,74,0.8);
+    animation: pulse-ring 2s ease-out infinite;
+}
+
+@keyframes pulse-ring {
+    0%   { transform: scale(1);   opacity: 0.8; }
+    100% { transform: scale(1.7); opacity: 0; }
+}
+
+.demo-play-btn {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: var(--cta-lime);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow:
+        0 0 0 6px rgba(200,230,74,0.25),
+        0 12px 40px rgba(200,230,74,0.45);
+    transition: transform 0.2s, box-shadow 0.2s;
+    z-index: 1;
+}
+
+.demo-video-overlay:hover .demo-play-btn {
+    transform: scale(1.1);
+    box-shadow:
+        0 0 0 8px rgba(200,230,74,0.3),
+        0 16px 50px rgba(200,230,74,0.55);
+}
+
+/* Floating pause button */
+.demo-pause-float {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.55);
+    border: 1.5px solid rgba(107,143,94,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    backdrop-filter: blur(8px);
+    transition: background 0.2s, transform 0.2s;
+    z-index: 10;
+}
+
+.demo-pause-float:hover {
+    background: rgba(107,143,94,0.4);
+    transform: scale(1.08);
+}
+
+.demo-caption {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 13px;
+    color: #a8a29e;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+    .demo-video-section { padding: 64px 0 80px; }
+    .demo-play-btn { width: 64px; height: 64px; }
+    .demo-pulse-ring { width: 80px; height: 80px; }
+}
